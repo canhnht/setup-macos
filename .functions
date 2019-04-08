@@ -244,3 +244,18 @@ function o() {
 function tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# `free-port` frees a network port
+free-port() { kill "$(lsof -t -i :$1)"; }
+
+# `kill-port` kills processes attached to a network port
+kill-port() { kill -kill "$(lsof -t -i :$1)"; }
+
+# `frameworkpython` is a hack command for running a python script using system python
+function frameworkpython {
+    if [[ ! -z "$VIRTUAL_ENV" ]]; then
+        PYTHONHOME=$VIRTUAL_ENV /usr/local/bin/python "$@"
+    else
+        /usr/local/bin/python "$@"
+    fi
+}

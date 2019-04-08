@@ -18,11 +18,20 @@
     # Clone a repository including all submodules
     c = clone --recursive
 
+    # Checkout
+    co = checkout
+
     # Commit all changes
     ca = !git add -A && git commit -av
 
     # Switch to a branch, creating it if necessary
     go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+    # Fetch origin
+    fo = fetch origin
+
+    # Push HEAD to origin
+    po = push origin HEAD
 
     # Show verbose output about tags, branches or remotes
     tags = tag -l
