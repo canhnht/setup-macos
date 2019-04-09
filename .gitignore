@@ -17,11 +17,12 @@ Thumbs.db
 .Trashes
 
 # Files that contain credentials or personal info
-.extra
+.extra*
 .boto
 .mrjob.conf
 .s3cfg
 .aws/
+.ssh/
 
 # Repo scratch directory
 scratch/

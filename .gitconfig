@@ -6,6 +6,9 @@
     # View the current working tree status using the short format
     s = status -s
 
+    # View the current working tree status
+    st = status
+
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
@@ -23,6 +26,9 @@
 
     # Commit all changes
     ca = !git add -A && git commit -av
+
+    # Commit all changes
+    cm = commit
 
     # Switch to a branch, creating it if necessary
     go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
@@ -175,3 +181,7 @@
 [url "git://gist.github.com/"]
 
     insteadOf = "gist:"
+
+[credential]
+    helper = !aws --profile acworks codecommit credential-helper $@
+    UseHttpPath = true

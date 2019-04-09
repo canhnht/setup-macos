@@ -20,3 +20,7 @@ else
     fi;
 fi;
 unset doIt;
+
+echo "------------------------------"
+echo "TODO: Update .ssh/ with your SSH keys to match file .ssh/config."
+echo "Script completed."

@@ -148,3 +148,6 @@ tab-color() {
     echo -ne "\033]6;1;bg;green;brightness;$2\a"
     echo -ne "\033]6;1;bg;blue;brightness;$3\a"
 }
+
+# Use serveo for tunneling
+alias fire-ngrok='ssh -R 80:localhost:8000 serveo.net'

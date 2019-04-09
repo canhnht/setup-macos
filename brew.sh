@@ -144,12 +144,18 @@ brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" visual-studio-code
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" sequel-pro
-brew cask install --appdir="/Applications" visual-studio-code
+brew cask install --appdir="/Applications" psequel
 brew cask install --appdir="/Applications" ngrok
+brew cask install --appdir="/Applications" kitematic
+brew cask install --appdir="/Applications" origami-studio
+brew cask install --appdir="/Applications" postman
+brew cask install --appdir="/Applications" insomnia
+brew cask install --appdir="/Applications" dash
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
@@ -160,8 +166,11 @@ brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" gimp
 brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" parallels
+brew cask install --appdir="/Applications" teamviewer
+brew cask install --appdir="/Applications" vlc
 
-#Remove comment to install LaTeX distribution MacTeX
+# Remove comment to install LaTeX distribution MacTeX
 brew cask install --appdir="/Applications" mactex
 
 # Install Docker, which requires virtualbox
@@ -173,3 +182,8 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo "------------------------------"
+echo "TODO: Clone the repositories from Code Commit."
+echo "TODO: Config Sequel Pro with DB credentials in file `ac-rest-service/.env.production`."
+echo "Script completed."
