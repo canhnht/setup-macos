@@ -186,4 +186,5 @@ brew cleanup
 echo "------------------------------"
 echo "TODO: Clone the repositories from Code Commit."
 echo "TODO: Config Sequel Pro with DB credentials in file `ac-rest-service/.env.production`."
+echo "TODO: Install Settings Sync in VS Code and sync settings 6facf968e2488961bc77999b3193ad4c."
 echo "Script completed."
