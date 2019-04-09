@@ -163,7 +163,6 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" gimp
 brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" parallels
@@ -187,4 +186,5 @@ echo "------------------------------"
 echo "TODO: Clone the repositories from Code Commit."
 echo "TODO: Config Sequel Pro with DB credentials in file `ac-rest-service/.env.production`."
 echo "TODO: Install Settings Sync in VS Code and sync settings 6facf968e2488961bc77999b3193ad4c."
+echo "TODO: Go to Chrome and create new user profile with your company email if you want :p."
 echo "Script completed."

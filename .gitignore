@@ -23,6 +23,7 @@ Thumbs.db
 .s3cfg
 .aws/
 .ssh/
+ignored.zip
 
 # Repo scratch directory
 scratch/
