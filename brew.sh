@@ -170,10 +170,10 @@ brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" vlc
 
 # Extra apps
-# brew cask install anki
-# brew cask install genymotion
-# brew cask install astah-professional
-# brew cask install folx
+brew cask install anki
+brew cask install genymotion
+brew cask install astah-professional
+brew cask install folx
 
 # Remove comment to install LaTeX distribution MacTeX
 brew cask install --appdir="/Applications" mactex
