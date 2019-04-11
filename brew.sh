@@ -189,9 +189,6 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 # Remove outdated versions from the cellar.
 brew cleanup
 
-# Install git completion
-source ~/git-completion.bash
-
 echo "------------------------------"
 echo "TODO: Clone the repositories from Code Commit."
 echo "TODO: Config Sequel Pro with DB credentials in file `ac-rest-service/.env.production`."

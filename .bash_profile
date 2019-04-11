@@ -33,6 +33,7 @@ elif [ -f /etc/bash_completion ]; then
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
+source ~/git-completion.bash
 if type _git &> /dev/null; then
     complete -o default -o nospace -F _git g;
 fi;
