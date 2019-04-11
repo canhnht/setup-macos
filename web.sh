@@ -34,6 +34,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.bashrc
 source $NVM_DIR/nvm.sh # This loads nvm
+command -v nvm
 
 # Install latest version of node
 nvm install lts/*
