@@ -149,6 +149,7 @@ brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" sequel-pro
+brew cask install --appdir="/Applications" mysqlworkbench
 brew cask install --appdir="/Applications" psequel
 brew cask install --appdir="/Applications" ngrok
 brew cask install --appdir="/Applications" kitematic
@@ -192,5 +193,5 @@ echo "------------------------------"
 echo "TODO: Clone the repositories from Code Commit."
 echo "TODO: Config Sequel Pro with DB credentials in file `ac-rest-service/.env.production`."
 echo "TODO: Install Settings Sync in VS Code and sync settings 6facf968e2488961bc77999b3193ad4c."
-echo "TODO: Go to Chrome and create new user profile with your company email if you want :p."
+echo "TODO: Go to Chrome and create new user profile with your company email if you want :p. Then install extension Switchy Omega."
 echo "Script completed."
