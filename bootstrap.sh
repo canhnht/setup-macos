@@ -8,9 +8,6 @@ function doIt() {
     rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
         --exclude "README.md" --exclude "LICENSE" --exclude ".aws/" --exclude ".ssh/" \
         --exclude ".extra.*" --exclude "ignored.zip" -avh --no-perms . ~;
-    rsync .extra ~/.extra;
-    rsync .gitconfig ~/.gitconfig;
-    rsync .functions ~/.functions;
     source ~/.bash_profile;
 }
 
