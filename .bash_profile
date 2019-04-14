@@ -1,3 +1,5 @@
+echo "~/.bash_profile is executed"
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
