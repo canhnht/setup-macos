@@ -22,3 +22,8 @@ zip ignored.zip -r .aws .ssh .extra.*
 ```bash
 rm -rf .extra.* .ssh/config-* .aws/aws-*
 ```
+
+## If node is not found
+
+- Open `~/.bashrc`
+- Copy the NVM script part in `~/.bashrc` to the end of `~/.bash_profile`.
