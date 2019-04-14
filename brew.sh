@@ -109,6 +109,8 @@ brew install git
 brew install git-lfs
 brew install git-flow
 brew install git-extras
+brew link --overwrite git
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 brew install hub
 brew install imagemagick --with-webp
 brew install lua
@@ -171,10 +173,10 @@ brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" vlc
 
 # Extra apps
-brew cask install anki
-brew cask install genymotion
-brew cask install astah-professional
-brew cask install folx
+# brew cask install anki
+# brew cask install genymotion
+# brew cask install astah-professional
+# brew cask install folx
 
 # Remove comment to install LaTeX distribution MacTeX
 brew cask install --appdir="/Applications" mactex

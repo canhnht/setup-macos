@@ -13,6 +13,12 @@
 
 ## Create zip of ignored files
 
-```
+```bash
 zip ignored.zip -r .aws .ssh .extra.*
+```
+
+## Remove unused files
+
+```bash
+rm -rf .extra.* .ssh/config-* .aws/aws-*
 ```
