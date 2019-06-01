@@ -67,7 +67,6 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -76,35 +75,35 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
-brew install xz
+# brew install aircrack-ng
+# brew install bfg
+# brew install binutils
+# brew install binwalk
+# brew install cifer
+# brew install dex2jar
+# brew install dns2tcp
+# brew install fcrackzip
+# brew install foremost
+# brew install hashpump
+# brew install hydra
+# brew install john
+# brew install knock
+# brew install netpbm
+# brew install nmap
+# brew install pngcheck
+# brew install socat
+# brew install sqlmap
+# brew install tcpflow
+# brew install tcpreplay
+# brew install tcptrace
+# brew install ucspi-tcp # `tcpserver` etc.
+# brew install homebrew/x11/xpdf
+# brew install xz
 
 # Install other useful binaries.
 brew install ack
-brew install dark-mode
-#brew install exiv2
+# brew install dark-mode
+# brew install exiv2
 brew install git
 brew install git-lfs
 brew install git-flow
@@ -129,10 +128,10 @@ brew install pkg-config libffi
 brew install pandoc
 
 # Lxml and Libxslt
-brew install libxml2
-brew install libxslt
-brew link libxml2 --force
-brew link libxslt --force
+# brew install libxml2
+# brew install libxslt
+# brew link libxml2 --force
+# brew link libxslt --force
 
 # Install Heroku
 brew install heroku/brew/heroku
@@ -151,9 +150,6 @@ brew tap caskroom/fonts && brew cask install font-fira-code # Install fonts for 
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
-brew cask install --appdir="/Applications" sequel-pro
-brew cask install --appdir="/Applications" mysqlworkbench
-brew cask install --appdir="/Applications" psequel
 brew cask install --appdir="/Applications" ngrok
 brew cask install --appdir="/Applications" kitematic
 brew cask install --appdir="/Applications" origami-studio
@@ -166,9 +162,9 @@ brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" evernote
+# brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" gimp
-brew cask install --appdir="/Applications" inkscape
+# brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" parallels
 brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" vlc
@@ -177,7 +173,7 @@ brew cask install --appdir="/Applications" vlc
 # brew cask install anki
 # brew cask install genymotion
 # brew cask install astah-professional
-# brew cask install folx
+brew cask install folx
 
 # Remove comment to install LaTeX distribution MacTeX
 brew cask install --appdir="/Applications" mactex
@@ -193,8 +189,10 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 brew cleanup
 
 echo "------------------------------"
+osascript -e 'tell app "System Events" to display dialog "Open file brew.sh and follow instructions at the end of the file."'
 echo "TODO: Clone the repositories from Code Commit."
 echo "TODO: Config Sequel Pro with DB credentials in file `ac-rest-service/.env.production`."
 echo "TODO: Install Settings Sync in VS Code and sync settings 6facf968e2488961bc77999b3193ad4c."
-echo "TODO: Go to Chrome and create new user profile with your company email if you want :p. Then install extension Switchy Omega."
-echo "Script completed."
+echo "TODO: Go to Chrome and create new user profile, then install extension Switchy Omega."
+osascript -e 'tell app "System Events" to display dialog "Script brew.sh completed."'
+echo "Script brew.sh completed."

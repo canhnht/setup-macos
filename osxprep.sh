@@ -18,3 +18,6 @@ echo "------------------------------"
 echo "Installing Xcode Command Line Tools."
 # Install Xcode command line tools
 xcode-select --install
+
+osascript -e 'tell app "System Events" to display dialog "Script osxprep.sh completed."'
+echo "Script osxprep.sh completed."

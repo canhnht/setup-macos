@@ -38,3 +38,7 @@ command -v nvm
 
 # Install latest version of node
 nvm install lts/*
+
+echo "------------------------------"
+osascript -e 'tell app "System Events" to display dialog "Script web.sh completed."'
+echo "Script web.sh completed."

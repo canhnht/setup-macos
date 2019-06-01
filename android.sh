@@ -26,3 +26,7 @@ brew install android-sdk
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo "------------------------------"
+osascript -e 'tell app "System Events" to display dialog "Script android.sh completed."'
+echo "Script android.sh completed."

@@ -24,4 +24,5 @@ unset doIt;
 
 echo "------------------------------"
 echo "TODO: Update .ssh/ with your SSH keys to match file .ssh/config."
-echo "Script completed."
+osascript -e 'tell app "System Events" to display dialog "Script bootstrap.sh completed."'
+echo "Script bootstrap.sh completed."

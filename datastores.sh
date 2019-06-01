@@ -29,6 +29,12 @@ brew install elasticsearch
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew cask install --appdir="/Applications" mysqlworkbench
+brew cask install --appdir="/Applications" sequel-pro
+brew cask install --appdir="/Applications" psequel
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+echo "------------------------------"
+osascript -e 'tell app "System Events" to display dialog "Script datastores.sh completed."'
+echo "Script datastores.sh completed."

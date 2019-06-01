@@ -105,6 +105,7 @@ mkdir -p ~/.ipython
 cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
-echo "Script completed."
 echo "Usage: workon py2-data for Python2"
 echo "Usage: workon py3-data for Python3"
+osascript -e 'tell app "System Events" to display dialog "Script pydata.sh completed."'
+echo "Script pydata.sh completed."
