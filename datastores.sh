@@ -23,6 +23,7 @@ brew install mysql
 brew install postgresql
 brew install mongo
 brew install redis
+brew cask install homebrew/cask-versions/adoptopenjdk8  # Required before installing Elasticsearch
 brew install elasticsearch
 
 # Install mysql workbench
