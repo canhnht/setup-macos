@@ -27,3 +27,4 @@ ignored.zip
 
 # Repo scratch directory
 scratch/
+*.plist

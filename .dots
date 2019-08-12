@@ -96,6 +96,22 @@ function runDots() {
             echo ""
             ./android.sh
         fi
+        if [ $ARG == "ctf" ] || [ $ARG == "all" ]; then
+            # Run the android.sh Script
+            echo "------------------------------"
+            echo "Setting up CTF development environment."
+            echo "------------------------------"
+            echo ""
+            ./ctf.sh
+        fi
+        if [ $ARG == "uninstall" ] || [ $ARG == "all" ]; then
+            # Run the android.sh Script
+            echo "------------------------------"
+            echo "Uninstalling apps."
+            echo "------------------------------"
+            echo ""
+            ./uninstall.sh
+        fi
     done
 
     echo "------------------------------"

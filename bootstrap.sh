@@ -6,8 +6,9 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 function doIt() {
     rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-        --exclude "README.md" --exclude "LICENSE" --exclude ".aws/" --exclude ".ssh/" \
-        --exclude ".extra.*" --exclude "ignored.zip" -avh --no-perms . ~;
+        --exclude "README.md" --exclude "LICENSE" --exclude "CREDITS.md" \
+        --exclude ".aws/" --exclude ".ssh/" \
+        --exclude ".extra.*" -avh --no-perms . ~;
     source ~/.bash_profile;
 }
 
@@ -21,6 +22,12 @@ else
     fi;
 fi;
 unset doIt;
+
+read -p "Which secret credentials do you want to copy? "
+mkdir ~/.aws
+cp .aws/aws-$REPLY/* ~/.aws/
+cp .ssh/ssh-$REPLY/* ~/.ssh/
+cp .extra.$REPLY ~/.extra
 
 echo "------------------------------"
 echo "TODO: Update .ssh/ with your SSH keys to match file .ssh/config."
