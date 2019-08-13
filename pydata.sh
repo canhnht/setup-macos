@@ -24,6 +24,7 @@ echo "Setting up virtual environments."
 export PIP_REQUIRE_VIRTUALENV=false
 pip install virtualenv
 pip install virtualenvwrapper
+pip install awscli
 
 echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
@@ -40,32 +41,32 @@ echo $BASH_PROFILE_PATH
 echo "" >> $BASH_PROFILE_PATH
 source $EXTRA_PATH
 
-###############################################################################
-# Python 2 Virtual Enviroment                                                 #
-###############################################################################
+# ###############################################################################
+# # Python 2 Virtual Enviroment                                                 #
+# ###############################################################################
 
-echo "------------------------------"
-echo "Setting up py2-data virtual environment."
+# echo "------------------------------"
+# echo "Setting up py2-data virtual environment."
 
-# Create a Python2 data environment
-mkvirtualenv py2-data
-workon py2-data
+# # Create a Python2 data environment
+# mkvirtualenv py2-data
+# workon py2-data
 
-# Install Python data modules
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandas
-pip install sympy
-pip install nose
-pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
-pip install bokeh
-pip install Flask
-pip install sqlalchemy
-pip install mysql-python
+# # Install Python data modules
+# pip install numpy
+# pip install scipy
+# pip install matplotlib
+# pip install pandas
+# pip install sympy
+# pip install nose
+# pip install unittest2
+# pip install seaborn
+# pip install scikit-learn
+# pip install "ipython[all]"
+# pip install bokeh
+# pip install Flask
+# pip install sqlalchemy
+# pip install mysql-python
 
 ###############################################################################
 # Python 3 Virtual Enviroment                                                 #
@@ -107,7 +108,7 @@ mkdir -p ~/.ipython
 cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
-echo "Usage: workon py2-data for Python2"
+# echo "Usage: workon py2-data for Python2"
 echo "Usage: workon py3-data for Python3"
 osascript -e 'tell app "System Events" to display dialog "Script pydata.sh completed."'
 echo "Script pydata.sh completed."

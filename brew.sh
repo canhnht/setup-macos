@@ -69,13 +69,13 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+# brew tap bramstein/webfonttools
+# brew install sfnt2woff
+# brew install sfnt2woff-zopfli
+# brew install woff2
 
 # Install other useful binaries.
-brew install ack
+# brew install ack
 # brew install dark-mode
 # brew install exiv2
 brew install git
@@ -86,7 +86,7 @@ brew link --overwrite git
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 brew install hub
 brew install imagemagick --with-webp
-brew install lua
+# brew install lua
 # brew install lynx
 # brew install p7zip
 # brew install pigz
@@ -96,10 +96,10 @@ brew install lua
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
-brew install webkit2png
+# brew install webkit2png
 # brew install zopfli
 brew install pkg-config libffi
-brew install pandoc
+# brew install pandoc
 
 # Lxml and Libxslt
 # brew install libxml2
@@ -108,8 +108,8 @@ brew install pandoc
 # brew link libxslt --force
 
 # Install Heroku
-brew install heroku/brew/heroku
-heroku update
+# brew install heroku/brew/heroku
+# heroku update
 
 # Core casks
 # brew cask install --appdir="/Applications" alfred
@@ -118,12 +118,12 @@ brew cask install --appdir="~/Applications" java
 # brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
+# brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" visual-studio-code
 brew tap caskroom/fonts && brew cask install font-fira-code # Install fonts for vscode
 brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" macdown
+# brew cask install --appdir="/Applications" vagrant
+# brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" ngrok
 brew cask install --appdir="/Applications" kitematic
 brew cask install --appdir="/Applications" origami-studio
@@ -138,17 +138,17 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 # brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" gimp
+# brew cask install --appdir="/Applications" gimp
 # brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" parallels
 brew cask install --appdir="/Applications" teamviewer
 brew cask install --appdir="/Applications" vlc
 
 # Extra apps
-brew cask install anki
+# brew cask install anki
 # brew cask install genymotion
 # brew cask install astah-professional
-brew cask install folx
+# brew cask install folx
 
 # Remove comment to install LaTeX distribution MacTeX
 # brew cask install --appdir="/Applications" mactex

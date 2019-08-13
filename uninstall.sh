@@ -18,6 +18,7 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
+brew uninstall lua
 brew uninstall lynx
 brew uninstall p7zip
 brew uninstall pigz
@@ -28,11 +29,13 @@ brew uninstall zopfli
 brew cask uninstall alfred
 brew cask uninstall xquartz
 brew cask uninstall sublime-text
-brew cask uninstall virtualbox
 brew cask uninstall vagrant
 brew cask uninstall macdown
 brew cask uninstall evernote
 brew cask uninstall inkscape
+brew cask uninstall gimp
+brew cask uninstall anki
+brew cask uninstall folx
 brew cask uninstall qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 # Remove outdated versions from the cellar.
