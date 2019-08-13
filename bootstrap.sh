@@ -25,6 +25,7 @@ unset doIt;
 
 read -p "Which secret credentials do you want to copy? "
 mkdir ~/.aws
+mkdir ~/.ssh
 cp .aws/aws-$REPLY/* ~/.aws/
 cp .ssh/ssh-$REPLY/* ~/.ssh/
 cp .extra.$REPLY ~/.extra
