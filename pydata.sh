@@ -22,9 +22,9 @@ echo "Setting up virtual environments."
 # Install virtual environments globally
 # It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
 export PIP_REQUIRE_VIRTUALENV=false
-pip install virtualenv
-pip install virtualenvwrapper
-pip install awscli
+pip3 install virtualenv
+pip3 install virtualenvwrapper
+pip3 install awscli
 
 echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
@@ -35,6 +35,7 @@ echo "" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 echo "# Source virtualenvwrapper, added by pydata.sh" >> $EXTRA_PATH
 echo "export WORKON_HOME=~/.virtualenvs" >> $EXTRA_PATH
+echo "export VIRTUALENVWRAPPER_PYTHON=$(which python3)" >> $EXTRA_PATH
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> $EXTRA_PATH
 BASH_PROFILE_PATH=~/.bash_profile
 echo $BASH_PROFILE_PATH
